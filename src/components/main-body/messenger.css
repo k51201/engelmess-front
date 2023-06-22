@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+html {
+    font-size: 14px;
+}
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
+.section {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    height: 60%;
+    }
+.contacts {
+    background-color: rgba(110, 43, 34, 0.719);
+    border: 1px solid #000;
+    opacity: 80%;
+    width: 312px;
+}
+.contacts__menu {
+    display: flex;
+
+}
+.contacts__menu-menu {
+    padding: 3px;
+    align-self: center;
+    margin-left: 3px;
+
+}
+.contacts__menu-search {
+    margin-top: 8px;
+    padding-left: 5px;
+    
+}
+.contacts__menu-search input {
+    width: 300px;
+    border-radius: 5px;
+    padding: 4px;
+    background-color: rgb(17, 17, 17);
+    color: rgb(167, 167, 167);
+}
+.contacts__items {
+    margin-top: 5px;
+
+}
+.contacts__item {
+    background-color: rgba(122, 44, 33, 0.808);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    text-align: left;
+}
+.contacts__item:hover{
+    cursor: pointer;
+    background: rgba(149, 55, 42, 0.835);
+    color: white;
+}
+.contacts__item-left {
+    display: flex;
+}
+.contacts__item-text  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contacts__item-text p {
+    font-size: 18px;
+}
+.contacts__item-text span {
+    align-self: flex-end;
+    font-size: 13px;
+    color:black;
+}
+.contacts__item-time {
+    font-size: 10px;
+    align-self: flex-end;
+    display: flex;
+}
+.message {
+    background-color: rgba(49, 16, 12, 0.616);
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 440px;
+}
+.message__header {
+    background-color: rgba(110, 43, 34, 0.856);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    align-items: center;
+}
+.message__header-info {
+    background-color: rgba(110, 43, 34, 0.719);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+}
+.message__header-info:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(180, 67, 52, 0.808);
+}
+.message__header-avatar img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    margin: 4px;
+}
+.message__header-text {
+    font-size: 13px;
+    color: honeydew;
+
+}
+.message__header-text p {
+    font-size: 17px;
+    color: honeydew; 
+    margin:0; 
+    font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+    margin-left: 20px;
+}
+.message__header-text span {
+    font-size: 12px;
+    color: black;
+    margin-left: 15px;
+}
+.message__header-menu {
+    padding: 12px;
+}
+.message__header-menu i{
+    padding: 8px;
+}
+.message__container {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+}
+.dialogs__container {
+    height: 87%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.force-overflow {
+    min-height: 350px;
+}
+#style-1::-webkit-scrollbar {
+    width: 5px;
+  }
+#style-1::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+#style-1::-webkit-scrollbar-track {
+    background: #29272746; 
+}
+
+.message__container-items {
+    display: flex;
+    flex-direction: column;
+}
+.message__container-item {
+    padding: 10px;
+    display: inline-flex;
+    border-radius: 4px;
+    margin: 2px;
+    overflow: hidden;
+}
+.left {
+    background-color: rgba(219, 161, 154, 0.931) ;
+    align-self: flex-start;
+    max-width: 450px;
+}
+.right {
+    background-color: rgba(168, 92, 80, 0.938);
+    align-self: flex-end;
+    color: honeydew;
+    max-width: 450px;
+}
+.message__item-text {
+    width: 100%;
+}
+.message__item-time {
+    padding-left: 15px;
+    font-size: 10px;
+    float: left;
+    align-self: flex-end;
+}
+.message__footer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(110, 43, 34, 0.856);
+
+}
+.message__footer-menu i {
+    padding: 7px;
+}
+.message__footer-message input {
+    width: 220px;
+    padding: 4px;
+    margin-right: 6px;
+    border-radius: 4px;
+    color: rgb(167, 167, 167);
+    background-color: rgb(17, 17, 17);
+}
+.fa-plus-circle:hover {
+    color: gray;
+    cursor: pointer;
+}
+.fa-search:hover {
+    color: gray;
+    cursor: pointer;
+}
+.fa-book:hover {
+    color: gray;
+    cursor: pointer;    
+}
+.fa-gift:hover {
+    color: gray;
+    cursor: pointer;
+}
+.fa-camera:hover {
+    color:gray;
+    cursor: pointer;
+}
+.fa-microphone:hover {
+    color:gray;
+    cursor: pointer;
+}
+.fa-smile-o:hover {
+    color: gray;
+    cursor: pointer;
+}
+.fa-paper-plane:hover {
+    color:gray;
+    cursor: pointer;
+}
+.start-dialog-message{
+    background-color: rgba(180, 67, 52, 0.808);
+    margin: 6px;
+    padding: 1px 3px 1px 3px;
+}
+
+.start-dialog-message h2{
+    font-size: smaller;
+    color: honeydew;
+}
